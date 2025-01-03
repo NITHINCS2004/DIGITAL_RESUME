@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+
+#theme-switcher {
+    position: fixed;
+    right: 1em;
+    top: 1em;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.theme {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 1px solid;
+}
+
+.theme:hover {
+    height: 33px;
+    width: 33px;
+}
+
+#theme-dark {
+    background-color: #000;
+}
+
+#theme-light {
+    background-color: #fff;
+}
+
+#theme-1 {
+    background-color: #999ECD;
+}
+
+#theme-2 {
+    background-color: #73B5DE;
+}
+
+#theme-3 {
+    background-color: #AD7EAD;
+}
+
+/* Base Theme Variables */
+:root {
+    --mainTextColor-light: #000;
+    --secondaryTextColor-light: rgb(51, 51, 51);
+    --mainLinkColor-light: #0da2b8;
+    --mainBorderColor-light: rgb(218, 218, 218);
+    --mainBgColor-light: rgb(249, 250, 251);
+}
+
+[data-theme="dark"] {
+    --mainTextColor: #fff;
+    --secondaryTextColor: #adb0b1;
+    --mainLinkColor: rgb(30, 190, 214);
+    --mainBorderColor: #2b3031;
+    --mainBgColor: #131415;
+}
+
+[data-theme="custom-1"] {
+    --mainTextColor: #000;
+    --secondaryTextColor: #555;
+    --mainLinkColor: #999ECD;
+    --mainBorderColor: #999ECD;
+    --mainBgColor: #F5F5FB;
+}
+
+[data-theme="custom-2"] {
+    --mainTextColor: #000;
+    --secondaryTextColor: #555;
+    --mainLinkColor: #73B5DE;
+    --mainBorderColor: #73B5DE;
+    --mainBgColor: #EAF5FB;
+}
+
+[data-theme="custom-3"] {
+    --mainTextColor: #000;
+    --secondaryTextColor: #555;
+    --mainLinkColor: #AD7EAD;
+    --mainBorderColor: #AD7EAD;
+    --mainBgColor: #F5EAF5;
+}
+
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+    line-height: 1.5em;
+    background-color: var(--mainBgColor);
+    color: var(--mainTextColor);
+    margin: 0;
+    padding: 0;
+}
+#wrapper--techstack__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    display: flex;
+    gap: 0.5em;
+    background: var(--mainBgColor);
+}
+
+/* Icons Colors */
+.python-icon {
+    color: #306998; /* Python blue */
+}
+
+.javascript-icon {
+    color: #f7df1e; /* JavaScript yellow */
+}
+
+.html-icon {
+    color: #e34c26; /* HTML orange */
+}
+
+.css-icon {
+    color: #264de4; /* CSS blue */
+}
+
+.nodejs-icon {
+    color: #68a063; /* Node.js green */
+}
+
+.react-icon {
+    color: #61dafb; /* React blue */
+}
+
+.sql-icon {
+    color: #ff6f61; /* SQL red */
+}
+
+.ai-icon {
+    color: #7b68ee; /* AI purple */
+}
+
+.powerbi-icon {
+    color: #f2c811; /* Power BI yellow */
+}
+
+/* Hover Effects for Icons */
+.card--techstack i:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    transition: 0.3s;
+}
+#intro-container {
+    margin-bottom: 1.5em; /* Reduced spacing */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Name Styling */
+#user-name {
+    font-size: 2em; /* Reduced font size */
+    font-weight: bold;
+    margin-bottom: 0.3em; /* Reduced spacing below the name */
+    line-height: 1.2em;
+    color: #000; /* Ensure the color is black */
+    text-align: left; /* Align text to the left */
+}
+
+#user-name .first-name,
+#user-name .last-name {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Subtle spacing */
+}
+
+/* Bio */
+#bio {
+    font-size: 1em; /* Reduced font size */
+    line-height: 1.5em;
+    color: #333; /* Slightly lighter black */
+    margin: 0 0 0.5em 0; /* Align bio to the left */
+    text-align: left; /* Align text to the left */
+}
+
+/* Email */
+#email {
+    font-size: 0.9em; /* Smaller font size for email */
+    color: #000;
+    font-weight: 500;
+    text-align: left; /* Align email to the left */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Subtle upward motion */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Natural position */
+    }
+}
+p, span, li {
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+@keyframes passLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  #separator {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: passLine 1s forwards;
+  }
+a {
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li {
+    line-height: 1.9em;
+}
+
+#container--main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1em;
+    background: var(--mainBgColor);
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+#bio, a {
+    font-weight: 300;
+}
+
+#user-name {
+    font-size: 48px;
+    line-height: 1.2em;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--mainBorderColor);
+}
+
+#email {
+    color: var(--mainTextColor);
+}
+
+#socials--list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#socials--list a:hover {
+    font-weight: 400;
+    color: var(--mainLinkColor);
+}
+
+#qualifications--list {
+    list-style: none;
+    padding: 0;
+}
+
+#wrapper--techstack__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    text-align: center;
+    background: var(--mainBgColor);
+}
+
+.card--project {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a {
+    color: var(--mainTextColor);
+    transition: 0.3s;
+}
+
+.card--project a:hover {
+    color: var(--mainLinkColor);
+}
+
+.card--work-history {
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 2em;
+}
+
+.line-break {
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+
+@media (max-width: 600px) {
+    .section--page {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: 2em;
+    }
+
+    #wrapper--hero {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    #wrapper--hero {
+        flex-direction: column;
+    }
+
+    .card--work-history {
+        border-left: none;
+        padding-left: 0;
+    }
+    
+}
+.check-work-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.check-work-text {
+    font-size: 16px; /* Initial font size */
+    color: black; /* Default color */
+    animation: grow-shrink 2s infinite, color-change 1s infinite; /* Apply both animations */
+}
+
+/* Continuous grow and shrink animation */
+@keyframes grow-shrink {
+    0% {
+        font-size: 15px; /* Initial size */
+    }
+    50% {
+        font-size: 16px; /* Maximum size */
+    }
+    100% {
+        font-size: 15px; /* Back to original size */
+    }
+}
+
+/* Continuous color change animation */
+@keyframes color-change {
+    0% {
+        color: black; /* Initial color */
+    }
+    50% {
+        color: #08cb60; /* Change color */
+    }
+    100% {
+        color: rgb(239, 7, 7); /* Back to original color */
+    }
+}
+.section--page{
+    margin-top:-20px;
+}
+
+ul li {
+    margin-bottom: 10px; /* Space between items */
+    font-size: 16px;
+    margin-left: 30px; /* Move content to the right by 30px */
+}
+
+ul li i {
+    margin-left: 10px; /* Adds space between the icon and text */
+margin-left: 1px; /* Adds space between the icon and text */
+
+
+}
+/* Bachelor - Blue */
+.bachelor {
+    color: #010306;
+}
+
+.bachelor i {
+    color: #0056b3; /* Darker shade for the icon */
+}
+
+/* Senior Secondary - Green */
+.senior-secondary {
+    color: #000201;
+}
+
+.senior-secondary i {
+    color: #1e7e34; /* Darker shade for the icon */
+}
+
+/* Secondary - Orange */
+.secondary {
+    color: #070401;
+}
+
+.secondary i {
+    color: #e56b00; /* Darker shade for the icon */
+}
+
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+#education {
+    background-color: #fff;
+    color: #333;
+}
+
+ul li {
+    color: #333;
+}
+
+/* Dark theme styles */
+body[data-theme='dark'] {
+    background-color: #121212;
+    color: #fff;
+}
+
+body[data-theme='dark'] #education {
+    background-color: #333;
+    color: #fff;
+}
+
+body[data-theme='dark'] ul li {
+    color: #ccc;
+}
