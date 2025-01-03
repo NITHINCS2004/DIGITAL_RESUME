@@ -4,6 +4,7 @@
 
 DIGITAL_RESUME is a modern, responsive, and interactive platform designed to showcase your personal and professional achievements in a digital format. This project transforms the traditional paper resume into a visually appealing, user-friendly web application that highlights your skills, experience, and accomplishments.
 
+
 ✨ Key Features
 
 🎨 Personalized Design: A fully customizable layout tailored to your unique professional profile.
@@ -18,7 +19,8 @@ DIGITAL_RESUME is a modern, responsive, and interactive platform designed to sho
 
 📧 Contact Information: Integrated contact options with email links and social media profiles.
 
-🌟 Why Choose a Digital Resume
+
+🌟 Why Choose a Digital Resume?
 
 📂 Accessibility: Share your resume with a simple link, making it accessible anywhere and anytime.
 
@@ -27,6 +29,7 @@ DIGITAL_RESUME is a modern, responsive, and interactive platform designed to sho
 ♻️ Dynamic Updates: Easily modify and update your resume without reprinting.
 
 🎥 Enhanced Presentation: Use animations, charts, and visuals to stand out from the crowd.
+
 
 🛠️ Technologies Used
 
@@ -39,6 +42,7 @@ DIGITAL_RESUME is a modern, responsive, and interactive platform designed to sho
 💾 Local Storage: To remember user preferences (e.g., theme selection).
 
 📂 Font Awesome: For adding professional icons and visual elements.
+
 
 🚀 How to Use
 
